@@ -39,7 +39,7 @@ static char charBuff[30];
 // InfluxDB v2 organization id (Use: InfluxDB UI -> User -> About -> Common Ids )
 #define INFLUXDB_ORG "5b8c752a010233a1"
 // InfluxDB v2 bucket name (Use: InfluxDB UI ->  Data -> Buckets)
-#define INFLUXDB_BUCKET "Weather_indoor"
+#define INFLUXDB_BUCKET "Weather_outdoor"
 
 // Set timezone string according to https://www.gnu.org/software/libc/manual/html_node/TZ-Variable.html
 // Examples:
@@ -53,7 +53,7 @@ static char charBuff[30];
 InfluxDBClient client(INFLUXDB_URL, INFLUXDB_ORG, INFLUXDB_BUCKET, INFLUXDB_TOKEN, InfluxDbCloud2CACert);
 
 // Data point
-Point sensor("Weather_indoor");
+Point sensor("Weather_outdoor");
 
 unsigned long lastMs = 0;
 
@@ -109,10 +109,10 @@ if (!bme.begin(0x76)) {
 
   // Add tags
   sensor.addTag("BME280", DEVICE);
-  sensor.addTag("Temp_indoor", "Temperatur");
-  sensor.addTag("Pressure_indoor", "Lufttryck");
-  sensor.addTag("Humid_indoor", "Luftfuktighet");
-  sensor.addTag("Altitude_indoor", "Höjd");
+  sensor.addTag("Temp_outdoor", "Temperatur");
+  sensor.addTag("Pressure_outdoor", "Lufttryck");
+  sensor.addTag("Humid_outdoor", "Luftfuktighet");
+  sensor.addTag("Altitude_outdoor", "Höjd");
   // Accurate time is necessary for certificate validation and writing in batches
   // For the fastest time sync find NTP servers in your area: https://www.pool.ntp.org/zone/
   // Syncing progress and the time will be printed to Serial.

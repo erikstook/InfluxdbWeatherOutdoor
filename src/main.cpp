@@ -29,15 +29,15 @@ static char charBuff[30];
 
 
 // WiFi AP SSID
-#define WIFI_SSID "ASUS"
+#define WIFI_SSID "OMDUVISSTE"
 // WiFi password
-#define WIFI_PASSWORD "guildford"
+#define WIFI_PASSWORD "grodanboll"
 // InfluxDB v2 server url, e.g. https://eu-central-1-1.aws.cloud2.influxdata.com (Use: InfluxDB UI -> Load Data -> Client Libraries)
-#define INFLUXDB_URL "http://192.168.1.3:8086"
+#define INFLUXDB_URL "http://192.168.3.181:8086"
 // InfluxDB v2 server or cloud API token (Use: InfluxDB UI -> Data -> API Tokens -> <select token>)
-#define INFLUXDB_TOKEN "Swp2xDGH7ksRmt31DiPB6n7OB3_DWlSadi3M94AwHMqGyGFFpGBOurZURK30-02srgBtRxsXLqBKiQebu_bhjg=="
+#define INFLUXDB_TOKEN "V30khnuxDUNOFJv3KnuZ6DeQpdqICCuE1nyBOMsW5gf3FqpiLAXriPy7pzsP9dB_2G0CGCcIKaErI6Pywc75og=="
 // InfluxDB v2 organization id (Use: InfluxDB UI -> User -> About -> Common Ids )
-#define INFLUXDB_ORG "024bfd304bc15d09"
+#define INFLUXDB_ORG "6f9454ab221d7691"
 // InfluxDB v2 bucket name (Use: InfluxDB UI ->  Data -> Buckets)
 #define INFLUXDB_BUCKET "Weather_outdoor"
 

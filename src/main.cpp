@@ -35,9 +35,9 @@ static char charBuff[30];
 // InfluxDB v2 server url, e.g. https://eu-central-1-1.aws.cloud2.influxdata.com (Use: InfluxDB UI -> Load Data -> Client Libraries)
 #define INFLUXDB_URL "http://192.168.3.181:8086"
 // InfluxDB v2 server or cloud API token (Use: InfluxDB UI -> Data -> API Tokens -> <select token>)
-#define INFLUXDB_TOKEN "V30khnuxDUNOFJv3KnuZ6DeQpdqICCuE1nyBOMsW5gf3FqpiLAXriPy7pzsP9dB_2G0CGCcIKaErI6Pywc75og=="
+#define INFLUXDB_TOKEN "_GAVDC0L9eQeaACm_wsHN6p0yDF_eFJFsd4zyFwVFuXlAwLJEtR1WxkkPGNe14v3fe6Hv30ZgJ7pCjS6TjfMzw=="
 // InfluxDB v2 organization id (Use: InfluxDB UI -> User -> About -> Common Ids )
-#define INFLUXDB_ORG "6f9454ab221d7691"
+#define INFLUXDB_ORG "bc9ef2b84d88750f"
 // InfluxDB v2 bucket name (Use: InfluxDB UI ->  Data -> Buckets)
 #define INFLUXDB_BUCKET "Weather_outdoor"
 
